@@ -27,7 +27,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
-
+     
     <style>
     #weatherWidget .currentDesc {
         color: #ffffff!important;
@@ -79,11 +79,11 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Môn Thi</a>
                         <ul class="sub-menu children dropdown-menu">                            
-                            <li><i class="fa fa-book"></i><a href="#">Môn 1</a></li>
-                            <li><i class="fa fa-book"></i><a href="#">Môn 2</a></li>
-                            <li><i class="fa fa-book"></i><a href="#">Môn 3</a></li>
-                            <li><i class="fa fa-book"></i><a href="#">Môn 4</a></li>
-                            <li><i class="fa fa-book"></i><a href="#">Môn 5</a></li>
+                            <li><i class="fa fa-book"></i><a href="#" id="mon1">Môn 1</a></li>
+                            <li><i class="fa fa-book"></i><a href="#" id="mon2">Môn 2</a></li>
+                            <li><i class="fa fa-book"></i><a href="#" id="mon3">Môn 3</a></li>
+                            <li><i class="fa fa-book"></i><a href="#" id="mon4">Môn 4</a></li>
+                            <li><i class="fa fa-book"></i><a href="#" id="mon5">Môn 5</a></li>
                         </ul>
                     </li>
                     <li>
@@ -211,7 +211,11 @@
             <div class="animated fadeIn">
                 
 
-                <div id="result"></div>
+                <div id="result">
+                    <div style="height:550px;">
+
+                    </div>
+                </div>
         
             </div>
             <!-- .animated -->
@@ -264,6 +268,48 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
     <script language="javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <!--ajax -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mon1').click(function(e) {
+                e.preventDefault();
+                $('#result').load('btn-content.html');
+            });
+        });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mon2').click(function(e) {
+                e.preventDefault();
+                $('#result').load('btn-content.html');
+            });
+        });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mon3').click(function(e) {
+                e.preventDefault();
+                $('#result').load('btn-content.html');
+            });
+        });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mon4').click(function(e) {
+                e.preventDefault();
+                $('#result').load('btn-content.html');
+            });
+        });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mon5').click(function(e) {
+                e.preventDefault(); 
+                $('#result').load('btn-content.html');
+            });
+        });
+        </script>
+
     <script language="javascript">
         function load1()
         {
@@ -293,5 +339,6 @@
 
         });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
