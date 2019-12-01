@@ -91,7 +91,7 @@
                     </li>
                     <li class="menu-title">In</li><!-- /.menu-title -->
                     <li>
-                        <a href="#" > <i class="menu-icon fa fa-print"></i>In danh sánh thi</a>
+                        <a href="#" id="print" > <i class="menu-icon fa fa-print"></i>In danh sánh thi</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -206,7 +206,7 @@
         </header>
         <!-- /#header -->
         <!-- Content -->
-        <div class="content">
+        <div class="content" id="ct">
             <!-- Animated -->
             <div class="animated fadeIn">
                 
@@ -331,6 +331,14 @@
             $.get(url, data, success, dataType);
         } 
     </script>
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $('#print').click(function(e) {
+                e.preventDefault();
+                $('#result').load('print.html');
+            });
+        });
+        </script>
     <!--Local Stuff-->
     <script>
         jQuery(document).ready(function($) {
