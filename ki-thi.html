@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -28,11 +28,7 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-<<<<<<< Updated upstream
-    <style>
-=======
     <!-- <style>
->>>>>>> Stashed changes
     #weatherWidget .currentDesc {
         color: #ffffff!important;
     }
@@ -67,7 +63,7 @@
             height: 160px;
         }
 
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -86,11 +82,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Môn Thi</a>
                         <ul class="sub-menu children dropdown-menu">                            
-<<<<<<< Updated upstream
-                            <li id="mon1" onclick="load1()"><i class="fa fa-book"></i><a href="#">Môn 1</a></li>
-=======
                             <li id="mon1" ><i class="fa fa-book"></i><a href="Môn1-dt.html">Môn 1</a></li>
->>>>>>> Stashed changes
                             <li><i class="fa fa-book"></i><a href="#">Môn 2</a></li>
                             <li><i class="fa fa-book"></i><a href="#">Môn 3</a></li>
                             <li><i class="fa fa-book"></i><a href="#">Môn 4</a></li>
@@ -251,12 +243,69 @@
         <div class="content">
             <!-- Animated -->
             <div class="animated fadeIn">
-                
-<<<<<<< Updated upstream
+                <!-- Thêm kì thi -->
+                <button type="button" class="btn btn-secondary mb-1" data-toggle="modal" data-target="#mediumModal">
+                        <i class="fa fa-plus-square"></i>    Tạo Kì Thi Mới
+                </button>
+                <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mediumModalLabel" style="text-align: center"><strong>Tạo Kì Thi Mới</strong></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row form-group">
+                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label"><strong>Tên Kì Thi</strong></label></div>
+                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Tên Kì Thi" class="form-control"><small class="form-text text-muted"></small></div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label"><strong>Năm Tổ Chức</strong></label></div>
+                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="yyyy" class="form-control"><small class="form-text text-muted"></small></div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label"><strong>Học Kì</strong></label></div>
+                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="I hoặc II" class="form-control"><small class="form-text text-muted"></small></div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label"><strong>Ghi Chú</strong></label></div>
+                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Ghi Chú" class="form-control"><small class="form-text text-muted"></small></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Thêm kì thi -->
+                </br>
+                <a href="ca-thi.html">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                            <h1 class="text-shadow">Kì thi 1</hi>
+                        </div>
+                        <div class="back">
+                            <h2>Angular</h2>
+                            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                        </div>
+                    </div>
+                </a>    
 
+                <div class="flip">
+                    <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                        <h1 class="text-shadow">MOUNTAIN</hi>
+                    </div>
+                    <div class="back">
+                        <h2>Angular</h2>
+                        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    </div>
+                </div>
+                
                 <div id="result"></div>
-=======
->>>>>>> Stashed changes
         
             </div>
             <!-- .animated -->
